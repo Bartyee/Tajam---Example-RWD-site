@@ -1,0 +1,668 @@
+:root{
+    --primary-color: #00e0d0;
+    --secondary-color: #413d4b;
+}
+
+*{
+    background-size: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+    color: #fff;
+}
+
+.header{
+    background-image: url(../img/header-img.jpg);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 980px;
+
+}
+
+.header__navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 60%;
+    
+}
+
+.header__logo{
+    display: flex;
+    align-items: center;
+     
+}
+
+.header__logo a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: "Roboto";
+    font-weight: 100;
+    margin-left: 20px;
+    font-size: 45px;
+    outline: none;
+    
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu a{
+    text-decoration: none;
+    color: 
+    padding: 10px 16px;
+    margin: 0 10px;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-family: "Roboto";
+    font-weight: 900;
+    outline: none;
+    transition: 0.5s
+    
+}
+
+.menu a:hover{
+    color: #fff;
+}
+
+.hamburger{
+    font-size: 40px;
+    display: none;
+}
+
+
+
+.header__content{
+    height: 60%;
+    width: 95%;
+    text-align: center;
+    margin-top: 120px;
+    
+}
+
+.header__content--h1{
+    font-family: 'Playfair Display';
+    font-weight: 900;
+    padding-bottom: 45px;
+    font-size: 32px;
+}
+
+.header__content--hr{
+    width: 100px;
+    margin: 0 auto;
+    border: solid var(--primary-color) 0.5px;
+    margin-bottom: 45px;
+}
+
+.header__content--p{
+    width: 46%;
+    font-size: 15px;
+    line-height: 30px;
+    font-family: "Roboto";
+    font-weight: 100;
+    margin: 0 auto;
+}
+
+.default-button,.header__content--button, .section__content--button{
+    padding: 12px 25px;
+    margin-top: 40px;
+    background-color: transparent;
+    color: var(--primary-color);
+    border: solid var(--primary-color) 1.2px;
+    font-family: "Hammersmith One";
+    font-weight: 400;
+    font-size: 15px;
+    transition: 1s;
+}
+
+.header__content--button:hover, .section__content--button:hover{
+    background-color: var(--primary-color);
+    transition: 1s;
+    color: white;
+    cursor: pointer;
+}
+
+
+.header__content_dots{
+    margin-top: 65px;
+}
+
+.dot{
+    background-color: transparent;
+    border: solid white 1px;
+    border-radius: 25px;
+    height: 15px;
+    padding-right: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+
+.dot:hover{
+    background-color: var(--primary-color);
+}
+
+
+.section-ourstory{
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 65px;
+    width: 60%;
+}
+
+.section__content--h1{
+    font-family: "PlayFair Display";
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 25px;
+    
+}
+
+.logo-big{
+    width: 205px;
+    height: 199px;
+    float: left;
+    margin-right: 85px;
+}
+
+.section-ourstory__content{
+    font-family: "Roboto";
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.section__content--button{
+    margin-bottom: 65px;
+}
+
+.section-video{
+    background: url("../img/bg2.jpg");
+    width: 100%;
+    height: 670px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-family: "Roboto", Black;
+    margin-bottom: 65px;
+}
+
+.section-video--play-button{
+    margin-bottom: 40px;
+    
+}
+
+.section-video--play-button:hover{
+    background: url("../img/play-button-hover.png");
+    cursor: pointer;
+}
+
+.section-expertise{
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-expertise--h1{
+    font-family: "PlayFair Display",bold;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.section-expertise--p{
+    color: #98989a;
+    font-family: "PlayFair Display";
+    font-weight: 400;
+    text-align: center;
+    height: 45px;
+}
+
+.section-expertise--hr{
+    margin-bottom: 80px;
+    width: 50px;
+    border: solid #98989a 1px;
+}
+
+.items--top{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 45px;
+}
+
+.section-expertise__item{
+    text-align: center;
+    margin: 0 auto;
+    width: 350px;
+    margin-bottom: 65px;
+}
+
+.item-title{
+    font-family: "Roboto";
+    font-weight: 700;
+    margin-top: 25px;
+}
+.item-description{
+    font-family: "Roboto";
+    font-weight: 100;
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.items--bottom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+.section-team{
+    background-image: url(../img/bg3.jpg);
+    background-position: center;
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-team--h1{
+    margin-top: 100px;
+    margin-bottom: 25px;
+    font-family: "PlayFair Display";
+    font-weight: 900;
+    font-size: 25px;
+    text-align: center;
+}
+
+.section-team--p{
+    font-family: "PlayFair Display";
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    width: 50%;
+    text-align: center;
+}
+
+.section-team--hr{
+    margin-top: 25px;
+    width: 75px;
+    border: solid #655d80 1px;
+}
+
+.section-team__workers{
+    margin-top: 80px;
+    display: flex;
+    width: 75%;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    
+    
+}
+
+.worker-img{
+    background-position: center;
+    background-size: cover;
+    color: black;
+    width: 65%;
+    border: solid black 2px;
+    border-radius: 150px;
+    transition: 0.5s;
+    
+    
+}
+
+.worker-img:hover{
+    width: 75%;
+    border: solid white 2px;
+}
+
+.worker{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 45px;
+    margin: auto auto;
+}
+
+.worker hr{
+    margin-top: 35px;
+    margin-bottom: 15px;
+    width: 150px;
+    border: solid var(--secondary-color) 0.5px;
+}
+
+
+.worker-name{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-family: "Roboto";
+    font-weight: 700;
+    text-align: center;
+}
+
+.worker-description{
+    font-family: "Roboto";
+    font-weight: 300;
+}
+
+.section-team--p_become{
+    font-size: 16px;
+}
+
+.section-team--button{
+    padding: 20px;
+    width: 180px;
+    margin-bottom: 45px;
+    
+}
+
+.section-team--button:hover{
+    transition: 0.5s;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    
+}
+
+.section-ourWorks{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction:column;
+    width: 100%;
+    height: auto;
+}
+
+.section-ourWorks--p{
+    font-family: "PlayFair Display";
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 30px;
+    margin: 8% 15% 5% 0%;
+    width: 50%;
+    color: black;
+    text-align: center;
+}
+
+.section-ourWorks--a{
+    width: 25%;
+    color: var(--secondary-color);
+    font-size: 15px;
+    font-family: "PlayFair Display";
+    margin: 8.2% 0% 5% 20%;
+    align-self: center;
+    align-items: baseline;
+    cursor: pointer;
+}
+
+.section-ourWorks--a:hover{
+    color: black;
+}
+
+.section-ourWorks__projects{
+    width: 100%;
+    background-color: gray;
+    height: 480px;
+    background: url(../img/projects.png);
+    margin-bottom: 5%;
+}
+
+.section-ourWorks--button{
+    width: 180px;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+.section-ourWorks--button:hover{
+    color: white;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.section-testimonials{
+    background: url("../img/testimontials-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-testimonials--quotation{
+    font-family: "PlayFair Display";
+    font-weight: 700;
+    font-size: 85px;
+    margin-top: 15px;
+    
+}
+
+.section-testimonials--description{
+    text-align: center;
+    width: 55%;
+    font-size: 18px;
+    font-family: "PlayFair Display";
+    line-height: 30px;
+}
+
+.section-testimonials--nav{
+    margin-top: 45px;
+    margin-bottom: 200px;
+}
+
+.section-contact{
+    height: 100%;
+    color: black;
+    display: flex;
+    
+}
+
+.section-contact--header{
+    font-size: 25px;
+    margin-top: 45px;
+    margin-bottom: 35px;
+    font-family: "PlayFair Display";
+    font-weight: 700;
+}
+
+.section-contact form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 40%;
+}
+
+.section-contact form input{
+    margin-top: 30px;
+    width: 100%;
+    height: 45px;
+    
+}
+
+.section-contact form input[type='submit']{
+    height: 45px;
+    width: 150px;
+    
+}
+
+.section-contact form input[type='submit']:hover{
+    height: 45px;
+    width: 150px;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    
+}
+
+.section-contact form input:nth-last-child(2){
+    height: 125px;
+}
+
+.sponsors{
+    margin: 0 auto;
+}
+
+.columns{
+    display: flex;
+}
+
+.column-left{
+    display: flex;
+    flex-direction: column;
+    margin-right: 45px;
+}
+
+.column-left img{
+    width: 100%;
+    margin: 25px 0;
+}
+
+.column-right{
+    display: flex;
+    flex-direction: column;
+}
+
+.column-right img{
+    width: 100%;
+    margin: 30px 0;
+}
+
+
+.footer{
+    height: 350px;
+    background: url("../img/footer-bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+    
+
+
+@media (max-width: 1208px){
+    .section-contact{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .section-contact--header{
+        text-align: center;
+    }
+    
+    .submit-button{
+        height: 85px;
+        width: 250px;
+        margin: 0 auto;
+        
+    }
+    
+}
+
+@media (max-width: 1340px){
+    .menu{
+        display: none;
+    }
+    
+    .header__navbar{
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .hamburger{
+        margin-left: auto;
+        display: block;
+        margin-left: 60px;
+    }
+    
+    .header__content--h1{
+        line-height: 40px;
+    }
+    .header__content--p{
+        line-height: 25px;
+    }
+    
+    .header{
+        background-position: center;
+        background-size: cover;
+        height: 1080px;
+    }
+}
+
+@media(max-width: 650px){
+    
+    .test{
+        flex-direction: column;
+        text-align: center;
+    }
+    .section-ourstory__content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .logo-big{
+        margin: 0;
+    }
+    
+    .section-ourWorks--p{
+        margin: 100px auto;
+    }
+    
+    .section-ourWorks{
+        justify-content: center;
+    }
+    
+    .section-ourWorks--a{
+        margin: 8.2% 0% 5% 0%;
+        text-align: center;
+        width: 55%;
+    }
+}
+
+@media(max-width: 492px){
+    
+    .section__content--p{
+        text-align: center;
+    }
+}
+
+@media(max-width: 1446px){
+    .section-team__workers{
+        width: 55%;
+    }
+    
+    .section__content--p{
+        text-align: center;
+    }
+}
+
+
